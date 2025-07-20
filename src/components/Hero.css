@@ -1,0 +1,79 @@
+/* src/components/Hero.css */
+
+.hero-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, white, #bde0fe); 
+    position: relative; /* FONDAMENTALE: Ancoraggio per le emoji posizionate in assoluto */
+    overflow: hidden; /* Se le emoji fuoriescono dai bordi, le taglia */
+}
+
+/* Stili per le emoji di sfondo */
+.bg-emoji {
+    position: absolute; /* Toglie l'emoji dal flusso del documento */
+    font-size: 80px; /* Grande per essere di sfondo, aggiusta a piacimento */
+    opacity: 0.5; /* Rende le emoji semi-trasparenti per non distrarre */
+    pointer-events: none; /* Impedisce che le emoji interferiscano con gli eventi del mouse (es. click) */
+    z-index: 0; /* Assicurati che siano dietro il contenuto principale */
+    /* Potresti anche aggiungere un filtro blur per un effetto più soft */
+    /* filter: blur(3px); */
+}
+
+/* Posizionamento specifico per ogni emoji */
+.emoji-1 {
+    top: 10%;
+    left: 15%;
+    transform: rotate(20deg); /* Ruota leggermente per un look più casuale */
+}
+
+.emoji-2 {
+    bottom: 20%;
+    right: 10%;
+    transform: rotate(-15deg);
+}
+
+.emoji-3 {
+    top: 30%;
+    right: 20%;
+    transform: rotate(30deg);
+}
+
+.emoji-4 {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg); /* Centra orizzontalmente e ruota */
+}
+
+.emoji-5 {
+    top: 55%;
+    left: 5%;
+    transform: rotate(-10deg);
+}
+
+
+/* Stili per i contenuti principali, assicurati che siano sopra le emoji di sfondo */
+.hero-eyebrow {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    z-index: 1; /* Assicurati che sia sopra le emoji di sfondo */
+}
+
+.hero-section-title {
+    position: relative; /* Mantieni questo se hai un'emoji specifica nel titolo */
+    font-size: 66px;
+    font-weight: 800;
+    color: white;
+    margin: 0 auto 32px auto;
+    text-align: center;
+    z-index: 1; /* Assicurati che sia sopra le emoji di sfondo */
+}
+
+button {
+  z-index: 1; /* Assicurati che sia sopra le emoji di sfondo */
+}
+

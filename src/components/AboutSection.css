@@ -1,0 +1,72 @@
+/* src/components/AboutSection.css */
+
+.about-section-wrapper {
+    padding: var(--spacing-xl) var(--spacing-lg); /* Padding per la sezione intera */
+    background-color: var(--ternary-color); /* Sfondo che crea contrasto con la sezione precedente */
+    color: var(--white); /* Testo bianco su sfondo scuro */
+    text-align: center; /* Centra il contenuto principale */
+}
+
+.about-content-container {
+    display: flex;
+    flex-direction: column; /* Default: colonna per mobile */
+    align-items: center;
+    gap: var(--spacing-xl); /* Spazio tra immagine e testo */
+    max-width: 1200px; /* Larghezza massima del contenitore */
+    margin: 0 auto; /* Centra il contenitore */
+}
+
+/* Media query per schermi più grandi (desktop) */
+@media (min-width: 768px) {
+    .about-content-container {
+        flex-direction: row; /* Affianca immagine e testo su desktop */
+        text-align: left; /* Allinea il testo a sinistra */
+    }
+}
+
+.about-image-container {
+    flex: 1; /* Permette all'immagine di occupare spazio */
+    min-width: 300px; /* Larghezza minima per l'immagine */
+    max-width: 500px; /* Larghezza massima per l'immagine */
+    border-radius: var(--spacing-sm); /* Bordi arrotondati */
+    overflow: hidden; /* Assicura che l'immagine rispetti i bordi */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Ombra per profondità */
+}
+
+.about-image-container img {
+    width: 100%;
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    display: block; /* Rimuove lo spazio extra sotto l'immagine */
+}
+
+.about-text-container {
+    flex: 1; /* Permette al testo di occupare spazio */
+    max-width: 600px; /* Limita la larghezza del testo per leggibilità */
+}
+
+.about-eyebrow {
+    font-size: var(--font-size-sm);
+    color: #e0e0e0; /* Un grigio chiaro per l'eyebrow */
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.about-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--white);
+}
+
+.about-description,
+.about-products-highlight {
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+.about-products-highlight {
+    font-weight: 500; /* Rendi questo testo leggermente più in grassetto */
+    color: #f0f0f0; /* Leggermente più chiaro del testo normale */
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Separatore sottile */
+}

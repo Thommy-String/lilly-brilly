@@ -1,0 +1,106 @@
+/* src/components/ServicesSection.css */
+
+.services-section-wrapper {
+    padding: var(--spacing-xl) var(--spacing-lg); /* Padding per la sezione intera */
+    text-align: center; /* Centra il titolo e il sottotitolo della sezione */
+    /* Aggiungi questo per il gradiente */
+    background: white;
+    /* Spiegazione:
+       - 'to top': la sfumatura va dal basso (var(--secondary-color)) verso l'alto (bde0fe)
+       - var(--secondary-color): il colore che hai già, sarà in basso
+       - #bde0fe: il nuovo colore, sarà in alto
+    */
+    color: var(--black); /* Colore del testo principale */
+}
+
+.services-section-wrapper h2 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-color); /* Esempio di colore per il titolo */
+}
+
+.services-section-subtitle {
+    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-xl);
+    max-width: 700px; /* Limita la larghezza per una migliore leggibilità */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permette alle card di andare a capo su schermi piccoli */
+    justify-content: center; /* Centra le card orizzontalmente */
+    gap: var(--spacing-lg); /* Spazio tra le card */
+    max-width: 1200px; /* Larghezza massima del contenitore delle card */
+    margin: 0 auto; /* Centra il contenitore delle card */
+}
+
+.service-card {
+    background-color: #f9f9f9; /* Sfondo leggermente diverso per le card */
+    border-radius: var(--spacing-sm); /* Bordi arrotondati */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Ombra leggera */
+    padding: var(--spacing-md);
+    flex: 1 1 300px; /* Ogni card occupa almeno 300px, si ridimensiona e cresce */
+    max-width: 350px; /* Limite massimo per la larghezza di una card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effetto hover */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Si solleva leggermente */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Ombra più pronunciata */
+}
+
+.card-image-container {
+    width: 100%;
+    height: 200px; /* Altezza fissa per le immagini */
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--spacing-xs);
+    overflow: hidden; /* Nasconde l'eccesso dell'immagine */
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assicura che l'immagine copra l'area senza distorcersi */
+    display: block; /* Rimuove lo spazio extra sotto l'immagine */
+}
+
+.card-eyebrow {
+    font-size: var(--font-size-xs);
+    color: var(--secondary-color); /* Colore grigio per l'eyebrow */
+    font-weight: 600;
+    margin-bottom: var(--spacing-xxs);
+}
+
+.card-title {
+    font-size: var(--font-size-lg);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.card-description {
+    font-size: var(--font-size-md);
+    color: var(--black);
+    line-height: 1.5;
+}
+
+
+.card-price {
+    font-size: var(--font-size-lg); /* O anche XL se vuoi che il prezzo spicchi */
+    font-weight: 700;
+    color: var(--CTA-color); /* O un colore che lo faccia risaltare */
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-xs); /* Spazio sotto il prezzo */
+}
+
+.card-description small {
+    font-size: var(--font-size-sm); /* Per il testo più piccolo nell'esempio del prezzo ufficio */
+    display: block; /* Per far andare l'esempio su una nuova riga */
+    margin-top: var(--spacing-xxs);
+    color: var(--ternary-color);
+}
