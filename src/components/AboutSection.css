@@ -1,10 +1,10 @@
 /* src/components/AboutSection.css */
 
 .about-section-wrapper {
-    padding: var(--spacing-xl) var(--spacing-lg); /* Padding per la sezione intera */
-    background-color: var(--ternary-color); /* Sfondo che crea contrasto con la sezione precedente */
-    color: var(--white); /* Testo bianco su sfondo scuro */
-    text-align: center; /* Centra il contenuto principale */
+    padding: var(--spacing-xl) var(--spacing-lg); 
+    background-color: var(--ternary-color); 
+    color: var(--white); 
+    text-align: center; 
 }
 
 .about-content-container {

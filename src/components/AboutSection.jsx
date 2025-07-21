@@ -11,7 +11,7 @@ export default function AboutSection() {
             <div className="about-content-container">
                 {/* Immagine della squadra */}
                 <div className="about-image-container">
-                    <img src={lillyPhoto} alt="Our Lilly's Cleaning Team" />
+                    <img src={lillyPhoto} alt="Lilly the founder" />
                 </div>
 
                 {/* Contenuto testuale */}
@@ -25,12 +25,6 @@ export default function AboutSection() {
                     <p className="about-products-highlight">
                      At Lilly's Cleaning, we believe a pristine environment is the foundation for a better life and work. Our mission is to transform your spaces, ensuring every family enjoys a healthier home and every office fosters enhanced productivity. We achieve this by exclusively using **eco-friendly, high-quality cleaning products** that are effective, yet safe for your family, pets, and the environment. Experience the difference of a truly clean and caring service.🧼 
                     </p>
-                    {/* Puoi aggiungere un elenco o altre info sui prodotti qui se vuoi */}
-                    {/* <ul className="product-list">
-                        <li>Eco-certified detergents</li>
-                        <li>Non-toxic disinfectants</li>
-                        <li>Hypoallergenic formulas</li>
-                    </ul> */}
                 </div>
             </div>
         </section>
