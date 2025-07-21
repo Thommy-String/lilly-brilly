@@ -2,11 +2,10 @@
 import React from 'react';
 import './ServiceSection.css';
 
-// Placeholder per le immagini (mantienili finché non hai quelle reali)
-// Oppure sostituisci con i percorsi reali delle tue immagini
+//Vostanti per le immagini 
 const regularCleaningImg = "https://i.pinimg.com/originals/20/57/c0/2057c06f9fcf3331b6045c86e97424e8.gif";
 const deepCleaningImg = "https://i.pinimg.com/originals/b4/cc/37/b4cc376c6d382a2f07f90e5f09e104c1.gif";
-const officeCleaningImg = "https://images.steamusercontent.com/ugc/913547991529879955/B94CA3409781B26DAAC9E996913E319DC2B896C1/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false";
+const officeCleaningImg = "https://i.pinimg.com/originals/7a/68/af/7a68affa5b1996be4467b93109133cbd.gif";
 
 export default function ServicesSection() {
     return (

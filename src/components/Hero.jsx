@@ -12,7 +12,7 @@ export default function Hero() {
             <div className="bg-emoji emoji-5">🧹</div>
 
             <p className="hero-eyebrow">🇱🇺 LUXEMBOURG</p>
-            <p className="hero-section-title ibm-plex-sans-thai-semibold">
+            <p className="hero-section-title">
                 Lilly's Cleaning
             </p>
             <button>Book a cleaning</button>
